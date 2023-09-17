@@ -5,7 +5,8 @@
 }
 
 body {
-background-color: #EDEEF0;
+    background-color: #EDEEF0;
+    height: 100vh;
 }
 
 .stroka {
@@ -13,13 +14,16 @@ background-color: #EDEEF0;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    min-height: 100%;
 }
 
 .img {
+    max-height: 500px;
     height: 100%;
     width: 100%;
- 
 }
+
+
 
 .card {
     max-width: 600px;
@@ -28,11 +32,34 @@ background-color: #EDEEF0;
     box-shadow: 5px 5px 10px grey;
     margin: 13px;
     border-radius: 10px;
+}
 
-
- 
+.card_hidden {
+    display: none;
 }
 
 .btn {
     padding: 8px;
+    margin-top: auto;
+    margin-bottom: 50px;
+}
+
+.loadder {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.loadder_hidden {
+    display: none;
+}
+
+.gif {
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin: auto;
 }
